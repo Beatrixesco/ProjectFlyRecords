@@ -11,6 +11,8 @@ SECUNDARIOS:
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    list-style:none;
+    text-decoration:none;
     margin: 0;
     padding: 0;
 }
@@ -72,12 +74,24 @@ nav a{
     width: 100%;
     overflow: hidden;
 }
+.barra > li {
+    float:left;
+    }
 
+    .barra li a {
+    background:#5f055f;
+    color:#FFF;
+    display:block;
+    border:none;
+    padding:10px 12px;
+}   
+/*
 .barra>li{
     float: left;
-}
+}*/
 
 /* SEGUNDO NIVEL*/
+/*
 .barra>li>ul{
     position: absolute;
     display: none;
@@ -85,7 +99,7 @@ nav a{
 
 .barra>li:hover ul{
     display: block;
-}
+}*/
 
 .barra2>li a{
     background-color: #520e44;
@@ -97,6 +111,25 @@ nav a{
 }
 
 /* TERCER NIVEL */
+.barra li ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.barra li:hover > ul {
+    display:block;
+}
+.barra li ul li {
+    position:relative;
+}    
+.barra li ul li ul {
+    right: -140px; 
+    top:0;
+}
+.barra3>li>a:hover{
+    background-color: #410d36;
+}
+/*
 .barra3>li a{
     background-color: #410d36;
 }
@@ -105,16 +138,16 @@ nav a{
     background-color: #330c2a;
 }
 
-.barra2>li>ul{
+.barra2>li>ul {
     position: absolute;
     right: -140px;
     top: 95px;
     display: none;
 }
 
-.barra2>li:hover ul{
+.barra2>li:hover ul>li{
     display: block;
-}
+}*/
 
 
 /*Carrito botón*/
