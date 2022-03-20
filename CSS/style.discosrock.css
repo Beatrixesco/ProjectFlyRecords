@@ -1,0 +1,258 @@
+/*COLORES:
+BLUE: #67AECA
+AMETHYST: #675682
+JEWEL: #5F055F
+ROSE: #E52A6F
+
+SECUNDARIOS:
+#520e44
+#410d36
+#330c2a*/
+
+/*GENERAL*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    color: whitesmoke;
+    padding: auto;
+    background-image: url("../img/rockfondo.png");
+    background-size: 100%;
+    width: auto;
+}
+
+/*PARTE SUPERIOR: imagen de logo para páginas principales*/
+/* header>img{
+    float: none;
+    max-width: 300px;
+    max-height: fit-content;
+    padding-left: 550px;
+} */
+
+/* GENERALES BARRA*/
+
+nav{
+    text-align: center;
+    width: auto;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    line-height: 1em;
+    min-width: 140px;
+    padding-left: 30px;
+}
+
+nav a{
+    color: whitesmoke;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.barra a:hover{
+    background-color: #520e44;
+}
+
+#sesion{
+    padding-left: 400px;
+    margin: 0%;
+}
+
+/* PRIMER NIVEL*/
+.barra{
+    background-color: #5f055f;
+    width: 100%;
+    overflow: hidden;
+}
+
+.barra>li{
+    float: left;
+}
+
+/* SEGUNDO NIVEL*/
+.barra>li>ul{
+    position: absolute;
+    display: none;
+}
+
+.barra>li:hover ul{
+    display: block;
+}
+
+.barra2>li a{
+    background-color: #520e44;
+    overflow: hidden;
+}
+
+.barra2>li>a:hover{
+    background-color: #410d36;
+}
+
+/* TERCER NIVEL */
+.barra3>li a{
+    background-color: #410d36;
+}
+
+.barra3>li a:hover{
+    background-color: #330c2a;
+}
+
+.barra2>li>ul{
+    position: absolute;
+    right: -140px;
+    top: 95px;
+    display: none;
+}
+
+.barra2>li:hover ul{
+    display: block;
+}
+
+/*CONTENIDO*/
+
+h1{
+    font-size: 45px;
+}
+
+h5{
+    font-weight: lighter;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+
+/*CARRITO BOTÓN*/
+.carrito{
+    position:absolute;
+    left: 1400px;
+    background-color: #E52A6F;
+    bottom: 570px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+a>.carritoimg{
+    max-width: 40px;
+}
+
+.producto img{
+    margin-left: 160px;
+    max-width: 500px;
+    padding-top: 80px;
+    position: static;
+}
+
+.descripcion{
+    position: absolute;
+    left: 800px;
+    bottom: 200px;
+    margin: 0%;
+}
+
+article{
+    line-height: 35px;
+    margin: 0;
+}
+
+section{
+    margin: 0;
+}
+
+footer{
+    background-color: #5f055f;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 20px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+small{font-weight: bold;}
+
+footer p{font-weight: lighter;}
+
+/*Botones*/
+
+.botones a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.agregarcarrito{
+    position:absolute;
+    text-align: center;
+    background-color: #67AECA;
+    padding: 10px;
+    max-width: 150px;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-radius: 30px;
+    list-style: none;
+}
+
+.agregarcarrito:hover{
+    background-color: #5496b1;
+}
+
+.comprar{
+    position: absolute;
+    text-align: center;
+    background-color: #E52A6F;
+    padding: 10px;
+    max-width: 150px;
+    padding-left: 15px;
+    border-radius: 20px;
+    list-style: none;
+}
+
+.comprar:hover{
+    background-color: #cf2362;
+}
+
+.botones{
+    padding-left: 50rem;
+    position: relative;
+    bottom: 80px;
+}
+
+.botones .comprar{
+    position: relative;
+    left: 250px;
+    bottom: 0px;
+}
+
+/*Imágenes de sugerencia*/
+
+.imgrec img{
+    max-width: 15%;
+    position: relative;
+    padding: 20px;
+}
+
+.recomendaciones{
+    text-align: center;
+}
+
+.rec{
+    background-color: #675682;
+    padding: 10px;
+    font-size: 20px;
+}
