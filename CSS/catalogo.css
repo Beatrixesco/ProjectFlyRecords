@@ -97,25 +97,24 @@ nav a{
 }
 
 /* TERCER NIVEL */
-.barra3>li a{
+.barra li ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.barra li:hover > ul {
+    display:block;
+}
+.barra li ul li {
+    position:relative;
+}    
+.barra li ul li ul {
+    right: -140px; 
+    top:0;
+}
+.barra3>li>a:hover{
     background-color: #410d36;
 }
-
-.barra3>li a:hover{
-    background-color: #330c2a;
-}
-
-.barra2>li>ul{
-    position: absolute;
-    right: -140px;
-    top: 95px;
-    display: none;
-}
-
-.barra2>li:hover ul{
-    display: block;
-}
-
 
 /*Carrito botón*/
 .carrito{
@@ -136,31 +135,27 @@ a>.carritoimg{
 }
 
 /*SECCIONES*/
-
+/*Titulares*/
 #name{
     padding-left: 50px;
 }
 
+
+/*imágenes*/
 .categoria{
     margin: 50px;
 }
 
-.sectitle{
-    text-decoration: none;
-}
-
-a>h1{
-    padding-left: 40px;
+figure>figcaption{
     color: whitesmoke;
-    text-decoration: none;
 }
 
-.categoria .sectitle{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+figure>a img{
+    max-width: 20%;
 }
 
+
+/*
 section>a{
     padding: 0%;
     text-decoration: none;
@@ -170,7 +165,7 @@ section>a{
     max-width: 20%;
     margin: 30px;
     position: relative;
-}
+}*/
 
 footer{
     background-color: #5f055f;

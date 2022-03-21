@@ -25,13 +25,19 @@ body{
     width: auto;
 }
 
-/*PARTE SUPERIOR: imagen de logo para páginas principales*/
-/* header>img{
+/*PARTE SUPERIOR: imagen de logo*/
+
+header{
+    background-color: #5f055f;
+}
+
+header>a>img{
     float: none;
     max-width: 300px;
     max-height: fit-content;
-    padding-left: 550px;
-} */
+    padding-left: 570px;
+    padding-right: 600px;
+}
 
 /* GENERALES BARRA*/
 
@@ -72,20 +78,19 @@ nav a{
     width: 100%;
     overflow: hidden;
 }
+.barra > li {
+    float:left;
+    }
 
-.barra>li{
-    float: left;
-}
+ .barra li a {
+    background:#5f055f;
+    color:#FFF;
+    display:block;
+    border:none;
+    padding:15px 12px;
+}   
 
-/* SEGUNDO NIVEL*/
-.barra>li>ul{
-    position: absolute;
-    display: none;
-}
-
-.barra>li:hover ul{
-    display: block;
-}
+/*SEGUNDO NIVEL*/
 
 .barra2>li a{
     background-color: #520e44;
@@ -97,19 +102,23 @@ nav a{
 }
 
 /* TERCER NIVEL */
-.barra3>li a{
+.barra li ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.barra li:hover > ul {
+    display:block;
+}
+.barra li ul li {
+    position:relative;
+}    
+.barra li ul li ul {
+    right: -140px; 
+    top:0;
+}
+.barra3>li>a:hover{
     background-color: #410d36;
-}
-
-.barra3>li a:hover{
-    background-color: #330c2a;
-}
-
-.barra2>li>ul{
-    position: absolute;
-    right: -140px;
-    top: 95px;
-    display: none;
 }
 
 .barra2>li:hover ul{
@@ -137,7 +146,7 @@ h3{
     position:absolute;
     left: 1400px;
     background-color: #E52A6F;
-    bottom: 570px;
+    bottom: 420px;
     padding: 10px;
     padding-right: 15px;
     padding-left: 15px;
@@ -151,6 +160,9 @@ a>.carritoimg{
     max-width: 40px;
 }
 
+
+/*INFO*/
+
 .producto img{
     margin-left: 160px;
     max-width: 500px;
@@ -161,7 +173,7 @@ a>.carritoimg{
 .descripcion{
     position: absolute;
     left: 800px;
-    bottom: 200px;
+    bottom: 70px;
     margin: 0%;
 }
 
