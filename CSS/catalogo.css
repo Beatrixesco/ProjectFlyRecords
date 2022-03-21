@@ -19,7 +19,7 @@ header{
     background-color: #5f055f;
 }
 
-header>img{
+header>a img{
     float: none;
     max-width: 300px;
     max-height: fit-content;
@@ -72,12 +72,24 @@ nav a{
     width: 100%;
     overflow: hidden;
 }
+.barra > li {
+    float:left;
+ }
 
+.barra li a {
+    background:#5f055f;
+    color:#FFF;
+    display:block;
+    border:none;
+    padding:15px 12px;
+}   
+/*
 .barra>li{
     float: left;
-}
+}*/
 
 /* SEGUNDO NIVEL*/
+/*
 .barra>li>ul{
     position: absolute;
     display: none;
@@ -85,7 +97,7 @@ nav a{
 
 .barra>li:hover ul{
     display: block;
-}
+}*/
 
 .barra2>li a{
     background-color: #520e44;
@@ -137,36 +149,48 @@ a>.carritoimg{
 /*SECCIONES*/
 /*Titulares*/
 #name{
-    padding-left: 50px;
+    margin: 70px;
+}
+
+#name:first-child{
+    font-size: 28px;
+}
+
+div>h3{
+    font-size: 20px;
+}
+
+form>p{
+    font-size: 15px;
+}
+
+#name div{
+    padding: 20px;
+    background-color: #67AECA;
+    border-radius: 20px;
+}
+
+div>h3,form{
+    padding-left: 40px;
 }
 
 
 /*imágenes*/
 .categoria{
-    margin: 50px;
+    margin: 70px;
 }
 
-figure>figcaption{
+.caja p{
     color: whitesmoke;
 }
 
-figure>a img{
-    max-width: 20%;
+.caja img{
+    max-width: 20%;}
+
+.caja{
+    padding: 20px;
 }
-
-
-/*
-section>a{
-    padding: 0%;
-    text-decoration: none;
-}
-
-.categoria>div>a img{
-    max-width: 20%;
-    margin: 30px;
-    position: relative;
-}*/
-
+    
 footer{
     background-color: #5f055f;
     padding: 10px;
