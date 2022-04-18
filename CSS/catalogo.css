@@ -17,14 +17,14 @@ SECUNDARIOS:
 
 header{
     background-color: #5f055f;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header>a img{
-    float: none;
+header img{
     max-width: 300px;
-    max-height: fit-content;
-    padding-left: 570px;
-    padding-right: 600px;
 }
 
 body{ 
@@ -57,93 +57,51 @@ nav a{
     text-decoration: none;
 }
 
-.barra a:hover{
-    background-color: #520e44;
-}
-
-#sesion{
-    padding-left: 400px;
-    margin: 0%;
-}
-
-/* PRIMER NIVEL*/
-.barra{
-    background-color: #5f055f;
-    width: 100%;
-    overflow: hidden;
-}
-.barra > li {
-    float:left;
- }
-
-.barra li a {
-    background:#5f055f;
-    color:#FFF;
-    display:block;
-    border:none;
-    padding:15px 12px;
-}   
-/*
-.barra>li{
-    float: left;
-}*/
-
-/* SEGUNDO NIVEL*/
-/*
-.barra>li>ul{
-    position: absolute;
-    display: none;
-}
-
-.barra>li:hover ul{
-    display: block;
-}*/
-
-.barra2>li a{
-    background-color: #520e44;
-    overflow: hidden;
-}
-
-.barra2>li>a:hover{
-    background-color: #410d36;
-}
-
-/* TERCER NIVEL */
-.barra li ul{
+ul li ul{
     display:none;
     position:absolute;
-    min-width:140px;
 }
-.barra li:hover > ul {
-    display:block;
+
+ul li:hover >ul{
+    display: block;
 }
-.barra li ul li {
-    position:relative;
-}    
-.barra li ul li ul {
-    right: -140px; 
-    top:0;
+
+ul li ul li{
+    position: relative;
 }
-.barra3>li>a:hover{
-    background-color: #410d36;
+
+ul li ul li ul{
+    left: 157px;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left:0px;
+}
+
+ul li ul li ul li{
+    position: relative;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown-menu2 li{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /*Carrito botón*/
 .carrito{
-    position:absolute;
-    left: 1400px;
-    background-color: #E52A6F;
-    padding: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-
+    position: fixed;
+    z-index: 90;
+    right: 0vmax;
 }
 
-a>.carritoimg{
-    max-width: 40px;
+.carritoimg{
+    max-width: 50px;
+    background-color: #E52A6F;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
 }
 
 /*SECCIONES*/

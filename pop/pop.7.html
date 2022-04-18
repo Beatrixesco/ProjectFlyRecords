@@ -4,54 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>V</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet"  href="../CSS/style.discospop.css">
 </head>
 <body>
 	<header>
 		<a href="../1paginaprincipal.html"><img src="../img/logoflyrecordsblanco.png" alt="Fly Records"></a>
    </header>
-   <nav> <!--Barra de navegación-->
-	<ul class="barra"> <!--primer nivel-->
-		<li><a href="#">Tipo</a>
-			<ul class="barra2">
-				<li><a href="../1tipovinilos.html">Vinilos</a></li>
-				<li><a href="../1tipocd.html">CD</a></li>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="nav-link" aria-current="page" href="../1ofertas.html">Ofertas</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Tipo
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item" href="../1tipovinilos.html">Vinilo</a></li>
+			  <li><a class="dropdown-item" href="../1tipocd.html">CD</a></li>
 			</ul>
-		</li>
-		<li><a href="#">Géneros</a>
-			<ul class="barra2"> <!--segundo nivel-->
-				<li><a href="../rockcatalogo.html">Rock</a></li>
-				<li><a href="../popcatalogo.html">Pop</a></li>
-				<li><a href="../inglescatalogo.html">Inglés</a></li>
-				<li><a href="../españolcatalogo.html">Español</a></li>
-				<li><a href="#">Otros</a>
-					<ul class="barra3"> <!--tercer nivel-->
-						<li><a href="../cumbiascatalogo.html">Cumbias</a></li>
-						<li><a href="../salsacatalogo.html">Salsa</a></li>
-						<li><a href="../electronicacatalogo.html">Electrónica</a></li>
-						<li><a href="../rapcatalogo.html">Rap</a></li>
-					</ul>
-				</li>						
-			</ul>
-		</li>
-		<li><a href="../1ofertas.html">Ofertas</a></li>	
-		<li><a href="../1creadores.html">Creadores</a></li>
-		<li id="sesion"><a href="../formulario.html">Iniciar Sesión</a></li>
-	</ul>
-</nav>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Géneros
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <li><a class="dropdown-item" href="../rockcatalogo.html">Rock</a></li>
+			  <li><a class="dropdown-item" href="../popcatalogo.html">Pop</a></li>
+			  <li><a class="dropdown-item" href="../inglescatalogo.html">Inglés</a></li>
+			  <li><a class="dropdown-item" href="../españolcatalogo.html">Español</a></li>
+			  <li><hr class="dropdown-divider"></li>
+			  <li><a class="dropdown-item" aria-labelledby="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#" >Otros</a>
+				<ul class="navbarDropdown">
+					<li><a class="dropdown-item" href="../rapcatalogo.html">Rap</a></li>
+					<li><a class="dropdown-item" href="../cumbiascatalogo.html">Cumbias</a></li>
+					<li><a class="dropdown-item" href="../salsacatalogo.html">Salsa</a></li>
+					<li><a class="dropdown-item" href="../electronicacatalogo.html">Electrónica</a></li></li></ul>
+				</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="../1creadores.html">Creadores</a>
+				  </li>
+				<li class="nav-item">
+				<a class="nav-link" href="../formulario.html">Iniciar sesión</a>
+			  </li>
+		  </li>
+		</ul>
+		<form class="navbar-form navbar-left" action="/action_page.php">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Buscar">
+			  <div class="input-group-btn">
+				<button class="btn btn-default" type="submit">
+				  <i class="glyphicon glyphicon-search"></i>
+				</button>
+			  </div>
+			</div>
+		  </form>
+	  </div>
+	</div>
+  </nav>
+<br>
 
+<div class="carrito">
+<a href="../carritocompra.html"><img class="carritoimg" src="../img/carritocompra.png" alt="Carrito"></a>
+</div>
+
+<div id="content">
 	<div class="producto">
 		<aside>
 			<img src="../img/pop_7.jpg" alt="V">
 			</aside>
 	</div>
-
-	<div class="carrito">
-		<a href="../carritocompra.html"><img class="carritoimg" src="../img/carritocompra.png" alt="Carrito"></a>
-	</div>
-
 	<div class="descripcion">
-			<h1>V</h1>
+			<h1><b>V</b></h1>
 			<h5>Art. No. 000207	|	Precio: <b>$15.00</b></h5>
 			<br>
 			<br>
@@ -65,22 +95,19 @@
 				<p><b>Fecha de Lanzamiento:</b> 02/09/2014</p>
 				<p><b>Estado:</b> Nuevo</p>
 			</article>
+			<div class="botones">
+				<ul>
+					<li class="agregarcarrito"><a href="#">Agregar a carrito</a></li>
+					<li class="comprar"><a href="#">Comprar</a></li>
+				</ul>
+			</div>
 		</section>
-		
 	</div>
-	<div class="botones">
-		<ul>
-			<li class="agregarcarrito"><a href="#">Agregar a carrito</a></li>
-			<li class="comprar"><a href="#">Comprar</a></li>
-		</ul>
-	</div>
-<br>
+</div>
 <br>
 <br>
 	<div class="recomendaciones">
 		<h3 class="rec">Recomendaciones</h3>
-		<br>
-		<br>
 		<br>
 		<section class="imgrec">
 			<a href="../pop/pop.6.html"><img src="../img/pop_6.jpg" alt="The END"></a>
@@ -88,14 +115,10 @@
 			<a href="../pop/pop.3.html"><img src="../img/pop_3.jpg" alt="Blood on the Dance Floor"></a>
 			<a href="../pop/pop.1.html"><img src="../img/pop_1.png" alt="Femme Fatale"></a>
 		</section>
-
 	</div>
 <br>
 <br>
-<br>
-<br>
-<br>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<footer>
 	<br>
 	<small>Derechos Reservados.</small>
