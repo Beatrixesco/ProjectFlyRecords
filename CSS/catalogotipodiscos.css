@@ -101,7 +101,6 @@ ul li ul li ul li{
     padding-bottom: 5px;
 }
 
-
 /*Carrito botón*/
 .carrito{
     position: fixed;
@@ -147,7 +146,7 @@ ul li ul li ul li{
 }
 
 .galeria_item{
-    width: calc(33.33% - 20px);
+    width: calc(20% - 20px);
 }
 
 .img_galeria{
@@ -164,7 +163,7 @@ ul li ul li ul li{
 }
 
 .text_contenedor h2{
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     padding-top: 20px;
 }

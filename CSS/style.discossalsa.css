@@ -26,7 +26,9 @@ body{
 }
 
 /*PARTE SUPERIOR: imagen de logo*/
-
+#top{
+    display: flex;
+}
 header{
     background-color: #5f055f;
     padding: 15px;

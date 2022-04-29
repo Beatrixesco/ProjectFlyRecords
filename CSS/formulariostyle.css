@@ -1,0 +1,32 @@
+/*COLORES:
+BLUE: #67AECA
+AMETHYST: #675682
+JEWEL: #5F055F
+ROSE: #E52A6F
+
+SECUNDARIOS:
+#520e44
+#410d36
+#330c2a*/
+
+/*GENERAL*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*PARTE SUPERIOR: imagen de logo*/
+
+header{
+    background-color: #5f055f !important;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logotipofly{
+    width: 300px !important;
+}

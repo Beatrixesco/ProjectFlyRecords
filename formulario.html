@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicia Sesión en Fly Records</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./CSS/formulariostyle.css">
     <style>
         .divider:after,
         .divider:before {
@@ -17,24 +18,27 @@
     </style>
 </head>
 <body>
+        <header>
+          <a href="./1paginaprincipal.html"><img id="logotipofly" src="./img/logoflyrecordsblanco.png" alt="Fly Records"></a>
+         </header>
     <section class="vh-100">
         <div class="container py-5 h-100">
           <div class="row d-flex align-items-center justify-content-center h-100">
             <div class="col-md-8 col-lg-7 col-xl-6">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="img-fluid" alt="Phone image">
+              <img src="./img/imagen.iniciarsesion.png" class="img-fluid" alt="Fly Records">
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
               <form>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                   <input type="email" id="form1Example13" class="form-control form-control-lg" />
-                  <label class="form-label" for="form1Example13">Email address</label>
+                  <label class="form-label" for="form1Example13">Correo Electrónico</label>
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-4">
                   <input type="password" id="form1Example23" class="form-control form-control-lg" />
-                  <label class="form-label" for="form1Example23">Password</label>
+                  <label class="form-label" for="form1Example23">Contraseña</label>
                 </div>
       
                 <div class="d-flex justify-content-around align-items-center mb-4">
@@ -47,23 +51,22 @@
                       id="form1Example3"
                       checked
                     />
-                    <label class="form-check-label" for="form1Example3"> Remember me </label>
+                    <label class="form-check-label" for="form1Example3"> Recuerda mi usuario </label>
                   </div>
-                  <a href="#!">Forgot password?</a>
+                  <a href="#!">¿Olvidaste tu contraseña?</a>
                 </div>
       
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #59064E">Iniciar sesión</button>
       
                 <div class="divider d-flex align-items-center my-4">
-                  <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                  <p class="text-center fw-bold mx-3 mb-0 text-muted">O</p>
                 </div>
       
-                <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!" role="button">
-                  <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
-                </a>
-                <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!" role="button">
-                  <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+                <a class="btn btn-default btn-lg btn-block" style="background-color: rgb(245, 247, 253)" href="./registrarse.html" role="button">
+                  <i class="fab fa-facebook-f me-2"></i>Continuar con Facebook</a>
+                <a class="btn btn-default btn-lg btn-block" style="background-color: rgb(245, 247, 253)" href="./registrarse.html" role="button">
+                  <i class="fab fa-twitter me-2"></i>Continuar con Google</a>
       
               </form>
             </div>
