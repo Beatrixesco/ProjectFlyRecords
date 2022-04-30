@@ -33,6 +33,16 @@ body{
    background-color: #675682;
 }
 
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #E52A6F;
+    border-radius: 5px;
+}
+
 /* GENERALES BARRA*/
 
 nav{

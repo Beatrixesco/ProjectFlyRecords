@@ -21,8 +21,19 @@ body{
     color: whitesmoke;
     padding: auto;
     background-image: url("../img/salsafondo.png");
-    background-size: 100%;
-    width: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #E52A6F;
+    border-radius: 5px;
 }
 
 /*PARTE SUPERIOR: imagen de logo*/
