@@ -188,6 +188,242 @@ ul li ul li ul li{
     border-radius: 18px;
 }
 
+/*Para móviles*/
+@media (min-width: 320px){
+    .carrito{
+        position: fixed;
+        z-index: 90;
+        right: 0vmax;
+    }
+    
+    .carritoimg{
+        max-width: 35px;
+        background-color: #E52A6F;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 5px;
+    }
+
+    #name{
+        margin: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #name h1{
+        font-size: 55px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #catalogo{
+        padding: 20px;
+        padding-top: 0;
+    }
+    
+    .galeria_contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .galeria_item{
+        width: calc(50% - 20px);
+    }
+    
+    .img_galeria{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .text_contenedor{
+        background-color: #675682d2;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .text_contenedor h2{
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 20px;
+        height: 50px;        
+        margin-bottom: 25px;
+    }
+
+    .text_contenedor p{
+        font-size: 12px;
+    }
+    
+    .text_contenedor button{
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 18px;
+    }
+   
+}
+
+/*Para tablets*/
+@media (min-width: 768px){
+    .carrito{
+        position: fixed;
+        z-index: 90;
+        right: 0vmax;
+    }
+    
+    .carritoimg{
+        max-width: 40px;
+        background-color: #E52A6F;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 5px;
+    }
+
+    #name{
+        margin: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #name h1{
+        font-size: 65px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #catalogo{
+        padding: 30px;
+        padding-top: 0;
+    }
+    
+    .galeria_contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .galeria_item{
+        width: calc(33.33% - 20px);
+    }
+    
+    .img_galeria{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .text_contenedor{
+        background-color: #675682d2;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .text_contenedor h2{
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .text_contenedor p{
+        font-size: 14px;
+    }
+    
+    .text_contenedor button{
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 18px;
+    }
+    
+}
+
+/*Para computadoras con un ancho menor o igual a 1200px*/
+@media (min-width: 992px){
+    .carrito{
+        position: fixed;
+        z-index: 90;
+        right: 0vmax;
+    }
+    
+    .carritoimg{
+        max-width: 50px;
+        background-color: #E52A6F;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 5px;
+    }
+
+    #name{
+        margin: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #name h1{
+        font-size: 65px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #catalogo{
+        padding: 30px;
+        padding-top: 0;
+    }
+    
+    .galeria_contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .galeria_item{
+        width: calc(20% - 20px);
+    }
+    
+    .img_galeria{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .text_contenedor{
+        background-color: #675682d2;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .text_contenedor h2{
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        height: 60px;
+    }
+
+    .text_contenedor p{
+        font-size: 14px;
+    }
+    
+    .text_contenedor button{
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 18px;
+    }
+    
+}
+
 footer{
     background-color: #5f055f;
     padding: 10px;

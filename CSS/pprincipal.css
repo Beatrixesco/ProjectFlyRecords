@@ -217,6 +217,11 @@ div h1 a:hover{
     grid-column-start: span 2;
 }
 
+.audio{
+    display: flex;
+    justify-content: center;
+}
+
 footer{
     background-color: #5f055f;
     padding: 10px;
