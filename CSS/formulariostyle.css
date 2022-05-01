@@ -19,6 +19,16 @@ SECUNDARIOS:
 
 /*PARTE SUPERIOR: imagen de logo*/
 
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #E52A6F;
+    border-radius: 5px;
+}
+
 header{
     background-color: #5f055f !important;
     padding: 15px;
@@ -29,4 +39,241 @@ header{
 
 #logotipofly{
     width: 300px !important;
+}
+
+.Iniciars{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #67AECA;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+.Iniciars:hover{
+    color: #67AECA;
+    background-color: whitesmoke;
+}
+
+.FB{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #5F055F;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+.FB:hover{
+    color: #5F055F;
+    background-color: whitesmoke;
+}
+
+.Google{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #5F055F;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+.Google:hover{
+    color: #5F055F;
+    background-color: whitesmoke;
+}
+
+.modal_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #675682bd;
+    display: flex;
+    
+    opacity: 0;
+    pointer-events: none;
+}
+
+ .modal__show{
+    opacity: 1;
+    pointer-events: unset;
+} 
+
+/* .contenedor{
+    width: 90%;
+    max-width: 600px;
+    max-height: 80%;
+    background-color: whitesmoke;
+    margin: auto; 
+    padding: 3em 1em !important;
+    border-radius: 10px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+} */
+
+.modal-header{
+    font-size: 20px;
+}
+
+.form-group input{
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.crearboton{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #67AECA;
+    padding: 0.8em 3em;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+.crearboton:hover{
+    color: #67AECA;
+    background-color: whitesmoke;
+}
+
+.cerrarboton{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #5f055f;
+    padding: 0.8em 3em;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color .3s;
+}
+
+.cerrarboton:hover{
+    color: #5f055f;
+    background-color: whitesmoke;
+}
+
+
+/*MEDIA QUERIES*/
+/*Para móviles*/
+@media (min-width: 320px){
+    .crearboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #67AECA;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .crearboton:hover{
+        color: #67AECA;
+        background-color: whitesmoke;
+    }
+    
+    .cerrarboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #5f055f;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .cerrarboton:hover{
+        color: #5f055f;
+        background-color: whitesmoke;
+    }
+}
+
+/*Para tablets*/
+@media (min-width: 768px){
+    .crearboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #67AECA;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .crearboton:hover{
+        color: #67AECA;
+        background-color: whitesmoke;
+    }
+    
+    .cerrarboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #5f055f;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .cerrarboton:hover{
+        color: #5f055f;
+        background-color: whitesmoke;
+    }
+}
+
+/*Para computadoras con un ancho menor o igual a 1200px*/
+@media (min-width: 992px){
+    .crearboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #67AECA;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .crearboton:hover{
+        color: #67AECA;
+        background-color: whitesmoke;
+    }
+    
+    .cerrarboton{
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #5f055f;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color .3s;
+        font-size: 15px;
+    }
+    
+    .cerrarboton:hover{
+        color: #5f055f;
+        background-color: whitesmoke;
+    }
 }

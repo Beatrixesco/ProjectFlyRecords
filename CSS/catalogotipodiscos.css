@@ -188,6 +188,17 @@ ul li ul li ul li{
     border-radius: 18px;
 }
 
+.iconoup img{
+    max-width: 50px;
+    padding: 10px;
+    background-color: #67AECA;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 /*Para móviles*/
 @media (min-width: 320px){
     .carrito{

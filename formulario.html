@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Inicia Sesión en Fly Records</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/formulariostyle.css">
     <style>
         .divider:after,
@@ -56,21 +57,61 @@
                 </div>
       
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #59064E">Iniciar sesión</button>
+                <button type="submit" class="Iniciars btn btn-primary btn-lg btn-block">Iniciar sesión</button>
       
                 <div class="divider d-flex align-items-center my-4">
                   <p class="text-center fw-bold mx-3 mb-0 text-muted">O</p>
                 </div>
       
-                <a class="btn btn-default btn-lg btn-block" style="background-color: rgb(245, 247, 253)" href="./registrarse.html" role="button">
+                <a class="FB btn btn-default btn-lg btn-block" href="#OpenModal" role="button" class="cta" data-bs-toggle="modal">
                   <i class="fab fa-facebook-f me-2"></i>Continuar con Facebook</a>
-                <a class="btn btn-default btn-lg btn-block" style="background-color: rgb(245, 247, 253)" href="./registrarse.html" role="button">
-                  <i class="fab fa-twitter me-2"></i>Continuar con Google</a>
+                <a class="Google btn btn-default btn-lg btn-block" href="#OpenModal" role="button" class="cta" data-bs-toggle="modal">
+                  <i class="fab fa-google me-2"></i>Continuar con Google</a>
+
+                  <!-- <a href="#OpenModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="modal" role="button">
+                    <button type="button" class="FB btn btn-primary btn-lg btn-block">
+                    Continuar con Facebook
+                  </button>
+                </a>
+        
+                  <a href="#OpenModal">
+                    <button type="button" class="Google btn btn-primary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="modal" role="button">
+                    Continuar con Google
+                  </button>
+                </a> -->
       
               </form>
             </div>
           </div>
         </div>
       </section>
+
+
+      <!--MODAL-->
+      <div class="modal fade" id="OpenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form action="" method="post"> 
+                <h2 class="modal-header">Registrarse</h2>
+                  <div class="form-group">
+                    <input type="text" id="Nombre" value="" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="form-control col-md-12" placeholder="Nombre"required />
+  
+                    <input type="text" id="Apellido" value="" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="form-control col-md-12" placeholder="Apellido"required />
+    
+                    <input type="email" id="correo" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Formato de correo: NombreCorreo@dominio" class="form-control col-md-12" placeholder="Correo Electrónico" required/>
+    
+                    <input type="password" id="password" value="" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})" title="Su contraseña debe ser de 6 a 15 caracteres y deben incluir una letra mayúscula, minúscula y un numero" class="form-control col-md-12" placeholder="Contraseña" required/>
+                    <br>
+                    <div class="modal-footer">
+                      <button id="boton1" type="submit" class="crearboton">Crear Cuenta</button>
+                    <button id="cerrar" class="cerrarboton btn-close" data-bs-dismiss="modal" aria-label="Close"">Cerrar</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
